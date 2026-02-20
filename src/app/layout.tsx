@@ -8,12 +8,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SmileCity Orthodontic and Dental Clinic | Best Orthodontist in Gurgaon, Haryana",
-  description: "Dr. K. Purnasri (MDS Orthodontist, Aligner Specialist, Invisalign Certified Provider). Located at Sector 65, Gurgaon. Specialist-driven orthodontic care.",
-  keywords: "Dr. K. Purnasri, Orthodontist, Aligner Specialist, Invisalign Gurgaon, SmileCity Orthodontic and Dental Clinic, Sector 65 Gurgaon Dentist, Braces",
-  authors: [{ name: "Dr. K. Purnasri" }],
-  creator: "SmileCity Orthodontic and Dental Clinic",
-  publisher: "SmileCity Orthodontic and Dental Clinic",
+  title: "Face Max Dental Clinic | Best Implantologist & Oral Surgeon in Pune",
+  description: "Dr. Shubham Sunil Salunkhe (Oral & Maxillofacial Surgeon | Implantologist). Located at Bhekrai Nagar Road, Pune. 100% Digital Workflow Implantology.",
+  keywords: "Dr. Shubham Sunil Salunkhe, Implantologist, Oral Surgeon, Face Max Dental Clinic, Dental Implants Pune, Wisdom Tooth Removal",
+  authors: [{ name: "Dr. Shubham Sunil Salunkhe" }],
+  creator: "Face Max Dental Clinic",
+  publisher: "Face Max Dental Clinic",
   formatDetection: {
     email: false,
     address: false,
@@ -24,16 +24,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "SmileCity Orthodontic and Dental Clinic | Expert Orthodontic Care",
-    description: "Dr. K. Purnasri - 8+ Years Experience. M3M 65th Avenue, Sector 65, Gurgaon.",
-    url: 'https://smilecitygurgaon.com/',
-    siteName: "SmileCity Orthodontic and Dental Clinic",
+    title: "Face Max Dental Clinic | Expert Implant & Surgical Care",
+    description: "Dr. Shubham Sunil Salunkhe - 7+ Years Experience. Bhekrai Nagar Road, Pune.",
+    url: 'https://smilecitygurgaon.com/', // Keeping URL as placeholder or if user wants to keep domain
+    siteName: "Face Max Dental Clinic",
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: "SmileCity Orthodontic and Dental Clinic",
+        alt: "Face Max Dental Clinic",
       },
     ],
     locale: 'en_IN',
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "SmileCity Orthodontic and Dental Clinic",
-    description: "Expert Orthodontic Care in Gurgaon",
+    title: "Face Max Dental Clinic",
+    description: "Expert Implant & Surgical Care in Pune",
     images: ['/og-image.jpg'],
   },
   robots: {

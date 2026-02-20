@@ -10,7 +10,7 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 tracking-tight">Meet The <span className="text-gradient-gold">Expert</span></h2>
-          <div className="w-24 h-1.5 bg-[#5B216E] mx-auto rounded-full mb-8"></div>
+          <div className="w-24 h-1.5 bg-[#485b51] mx-auto rounded-full mb-8"></div>
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
@@ -19,7 +19,7 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
             <div className="relative w-full max-w-md aspect-[4/5] rounded-[32px] overflow-hidden shadow-premium border-8 border-white ring-1 ring-gray-100 transform hover:scale-[1.02] transition-transform duration-500">
               <Image
                 src="/images/smile.jpg"
-                alt="Dr. K. Purnasri"
+                alt="Dr. Shubham Sunil Salunkhe"
                 fill
                 className="object-cover"
               />
@@ -29,21 +29,21 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
           {/* Content Side */}
           <div className="w-full md:w-3/5 text-center md:text-left">
             <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-              Dr. K. Purnasri
+              Dr. Shubham Sunil Salunkhe
             </h3>
-            <p className="text-[#5B216E] font-bold text-xl uppercase tracking-widest mb-8 border-b border-purple-100 pb-4 inline-block">
-              MDS Orthodontist, Aligner Specialist, Invisalign Certified Provider
+            <p className="text-[#485b51] font-bold text-xl uppercase tracking-widest mb-8 border-b border-emerald-100 pb-4 inline-block">
+              Oral & Maxillofacial Surgeon | Implantologist
             </p>
 
             <div className="space-y-6 text-gray-600 text-xl leading-relaxed font-light">
               <p>
-                With over <strong className="text-gray-900">8 years of clinical experience</strong>, Dr. K. Purnasri is a dedicated specialist providing precision-driven orthodontic care. She is recognized for her expertise in complex alignment cases and digital smile design.
+                With over <strong className="text-gray-900">7+ years of implantology experience</strong>, Dr. Shubham Sunil Salunkhe is a leading expert in complex and complicated implant cases. He is known for his precision and aesthetic-driven results.
               </p>
               <p>
-                At <strong>SmileCity Orthodontic and Dental Clinic</strong>, we follow a specialist-driven practice model, ensuring you receive direct care from the lead doctor throughout your treatment journey.
+                At <strong>Face Max Dental Clinic</strong>, we pride ourselves on offering a <strong className="text-gray-900">100% digital workflow in implantology</strong>—a unique feature in Pune.
               </p>
               <p>
-                Specializing in creating beautiful, functional smiles using the latest advancements in aligner technology and traditional orthodontics. Her approach combines clinical excellence with personalized patient care.
+                Dr. Salunkhe works across multiple clinics as a leading implantologist, bringing advanced equipment and expertise for all procedures to ensure the highest standard of care.
               </p>
             </div>
 

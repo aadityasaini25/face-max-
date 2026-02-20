@@ -12,7 +12,7 @@ export default function FAQSection() {
     },
     {
       question: "How long does orthodontic treatment usually take?",
-      answer: "Treatment duration varies based on complexity, but most cases range from 6 to 18 months for aligners, and 12 to 24 months for traditional braces. During your consultation with Dr. K. Purnasri, we'll provide a customized timeline for your specific smile."
+      answer: "Treatment duration varies based on complexity. During your consultation with Dr. Shubham Sunil Salunkhe, we'll provide a customized timeline for your specific treatment plan."
     },
     {
       question: "Am I too old for braces or Invisalign?",
@@ -48,16 +48,16 @@ export default function FAQSection() {
             <div key={index} className="card !p-0 overflow-hidden">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full p-6 md:p-8 text-left font-bold hover:bg-purple-50 transition-colors flex justify-between items-center group"
+                className="w-full p-6 md:p-8 text-left font-bold hover:bg-emerald-50 transition-colors flex justify-between items-center group"
               >
-                <span className="flex-grow pr-4 text-lg md:text-xl text-gray-800 group-hover:text-[#5B216E] transition-colors">{faq.question}</span>
-                <span className={`w-8 h-8 rounded-full border border-purple-100 flex items-center justify-center text-[#5B216E] transform transition-transform duration-300 ${openFAQ === index ? 'rotate-180 bg-[#5B216E] text-white' : ''}`}>
+                <span className="flex-grow pr-4 text-lg md:text-xl text-gray-800 group-hover:text-[#485b51] transition-colors">{faq.question}</span>
+                <span className={`w-8 h-8 rounded-full border border-emerald-100 flex items-center justify-center text-[#485b51] transform transition-transform duration-300 ${openFAQ === index ? 'rotate-180 bg-[#485b51] text-white' : ''}`}>
                   ▼
                 </span>
               </button>
               {openFAQ === index && (
                 <div className="px-6 pb-8 md:px-8 md:pb-10 bg-white">
-                  <div className="w-full h-px bg-purple-50 mb-8"></div>
+                  <div className="w-full h-px bg-emerald-50 mb-8"></div>
                   <p className="text-gray-600 font-light text-lg md:text-xl leading-relaxed">{faq.answer}</p>
                 </div>
               )}

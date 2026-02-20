@@ -3,8 +3,8 @@
 import { MessageCircle } from 'lucide-react';
 
 export default function WhatsAppButton() {
-  const phoneNumber = "+919211663616";
-  const message = "Hello! I would like to book an appointment at SmileCity Orthodontic and Dental Clinic.";
+  const phoneNumber = "+918080697453";
+  const message = "Hello! I would like to book an appointment at Face Max Dental Clinic.";
 
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -14,7 +14,7 @@ export default function WhatsAppButton() {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-6 right-6 bg-[#5B216E] text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50 hover:opacity-90"
+      className="fixed bottom-6 right-6 bg-[#485b51] text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-50 hover:opacity-90"
       aria-label="Contact via WhatsApp"
     >
       <MessageCircle className="h-6 w-6" />

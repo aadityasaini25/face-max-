@@ -20,17 +20,17 @@ export default function ThankYouPage() {
             <div className="w-48 h-48 relative rounded-full overflow-hidden border-4 border-gray-200">
               <Image
                 src="/images/smile.jpg"
-                alt="Dr. K. Purnasri"
+                alt="Dr. Shubham Sunil Salunkhe"
                 fill
                 className="object-cover object-top"
               />
             </div>
             <div className="text-center md:text-left">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
-                Dr. K. Purnasri
+                Dr. Shubham Sunil Salunkhe
               </h2>
               <p className="text-[#01659e] font-medium mb-4">
-                Orthodontics (Aligner Specialist, Invisalign Certified Provider)
+                Oral & Maxillofacial Surgeon | Implantologist
               </p>
               <p className="text-gray-600 max-w-lg">
                 Our team will review your appointment request and contact you shortly to confirm the details.
@@ -67,7 +67,7 @@ export default function ThankYouPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+919211663616"
+              href="tel:+918080697453"
               className="inline-flex justify-center items-center px-6 py-3 bg-[#01659e] text-white font-medium rounded-lg hover:bg-[#b8904a] transition-colors gap-2"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">

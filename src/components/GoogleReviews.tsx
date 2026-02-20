@@ -3,28 +3,28 @@ import Image from "next/image";
 export default function GoogleReviews() {
   const reviews = [
     {
-      name: "Priya Sharma",
-      initials: "PS",
+      name: "Amol kenche",
+      initials: "AK",
       date: "6 months ago",
-      review: "Dr. Purna Sri is absolutely amazing! I was terrified of dental procedures, but she made me feel so comfortable. My Invisalign treatment was completed in just 8 months and the results are incredible. The clinic is spotless and the staff is so caring."
+      review: "Had a great experience at Face max Dental & Face Clinic. Dr. Rasika Salunkhe is skilled and gentle. The treatment was painless and effective. Clean and modern clinic with a supportive staff. Highly recommended!"
     },
     {
-      name: "Meera Jain",
-      initials: "MJ",
+      name: "Shrirup Jogdand",
+      initials: "SJ",
       date: "1 months ago",
-      review: "Child-friendly environment made my 7-year-old daughter's visit stress-free. The pediatric team is wonderful and she actually looks forward to her dental visits now! They make it fun for kids."
+      review: "Took my kids to Face Max Dental for their check-ups, and Dr. Rasika was amazing with them! She made the experience fun and comfortable, and the kids left with smiles on their faces. A family-friendly clinic indeed!"
     },
     {
-      name: "Amit Verma",
-      initials: "AV",
+      name: "Dr suyog shendage",
+      initials: "SS",
       date: "8 months ago",
-      review: "Excellent orthodontic treatment! My braces journey was smooth and the results are perfect. The team monitored my progress closely and adjusted treatment as needed. Very satisfied with the outcome."
+      review: "I had a dental emergency last weekend and Dr. Shubham at Face Max Dental and Face Clinic was a lifesaver. He was calm, professional, and very skilled. The pain relief was immediate, and the follow-up care instructions were clear. Truly grateful"
     },
     {
-      name: "Vikram Singh",
-      initials: "VS",
+      name: "Eppar Amit",
+      initials: "EA",
       date: "6 months ago",
-      review: "Professional, clean, and modern clinic. Got my dental implants here and the entire process was smooth. Dr. Purna Sri is highly skilled and the results look completely natural. Worth every penny!"
+      review: "Face Max Dental provides efficient and professional service. Dr. Shubham handled my root canal procedure seamlessly, and the results were excellent. The clinic is clean, and the staff is courteous. Highly recommended!"
     }
   ];
 
@@ -40,14 +40,14 @@ export default function GoogleReviews() {
             className="mx-auto mb-6 object-contain"
           />
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight">What Our Patients Say</h2>
-          <div className="w-24 h-1 bg-[#5B216E] mx-auto rounded-full mt-6 opacity-60"></div>
+          <div className="w-24 h-1 bg-[#485b51] mx-auto rounded-full mt-6 opacity-60"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
           {reviews.map((review, index) => (
             <div key={index} className="card">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-inner" style={{ backgroundColor: '#5B216E' }}>
+                <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-inner" style={{ backgroundColor: '#485b51' }}>
                   {review.initials}
                 </div>
                 <div>
