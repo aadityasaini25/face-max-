@@ -31,17 +31,18 @@ export default function GoogleReviews() {
   return (
     <section className="py-20 md:py-32 px-4 md:px-8 lg:px-12 bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <p className="text-[#485b51] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Testimonials</p>
+        <div className="flex flex-wrap items-center gap-4 mb-8">
           <Image
             src="/images/google.png"
-            alt="Google Logo"
-            width={120}
-            height={40}
-            className="mx-auto mb-6 object-contain opacity-90"
+            alt="Google"
+            width={112}
+            height={38}
+            className="object-contain opacity-90"
           />
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900">Patient Experiences</h2>
-          <div className="w-20 h-1 bg-[#d4af37] mx-auto rounded-full mt-6"></div>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">Patient Experiences</h2>
         </div>
+        <div className="w-16 h-0.5 bg-[#d4af37] rounded-full mb-12" />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
           {reviews.map((review, index) => (

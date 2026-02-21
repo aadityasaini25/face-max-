@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import React from 'react';
+import React, { useState } from 'react';
 
 interface PopupFormProps {
   isOpen: boolean;
@@ -10,15 +10,18 @@ interface PopupFormProps {
   seconds: number;
 }
 
+// Set your Google Apps Script web app URL here to receive submissions (or use env NEXT_PUBLIC_BOOKING_SCRIPT_URL)
+const BOOKING_SCRIPT_URL = process.env.NEXT_PUBLIC_BOOKING_SCRIPT_URL || '';
+
 export default function PopupForm({ isOpen, onClose, minutes, seconds }: PopupFormProps) {
   const router = useRouter();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    // Prepare data for Apps Script
     const data = {
       name: formData.get('fullName') as string,
       phone: formData.get('phoneNumber') as string,
@@ -26,43 +29,23 @@ export default function PopupForm({ isOpen, onClose, minutes, seconds }: PopupFo
       concern: formData.get('dentalConcern') as string,
     };
 
-    console.log("Form Data to send:", data);
-
-    const scriptURL = ""; // Your Apps Script URL here
+    setIsSubmitting(true);
     try {
-      const response = await fetch(scriptURL, {
-        method: "POST",
-        mode: "no-cors", // keep for now, needed for Apps Script public endpoint
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      console.log("Raw fetch response:", response);
-
-      // With no-cors, you cannot read response body, so we log success directly
-      try {
-        const result = await response.json();
-        console.log("Parsed response:", result);
-
-        if (result.result === "success") {
-          alert("✅ Appointment booked successfully!");
-          onClose();
-          router.push("/thank-you");
-        } else {
-          throw new Error("Form submission failed");
-        }
-      } catch (err) {
-        console.log("No JSON response due to no-cors. Assuming success.", err);
-        alert("✅ Appointment booked successfully!");
-        onClose();
-        router.push("/thank-you");
+      if (BOOKING_SCRIPT_URL.trim()) {
+        await fetch(BOOKING_SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
       }
-
+      onClose();
+      router.push('/thank-you');
     } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("❌ Something went wrong. Please try again later.");
+      console.error('Error submitting form:', error);
+      alert('Something went wrong. Please call us at +91 80806 97453 to book.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -139,9 +122,10 @@ export default function PopupForm({ isOpen, onClose, minutes, seconds }: PopupFo
 
           <button
             type="submit"
-            className="w-full bg-[#485b51] text-white py-3 md:py-4 rounded-lg font-bold text-lg hover:opacity-90 transition-colors"
+            disabled={isSubmitting}
+            className="w-full bg-[#485b51] text-white py-3 md:py-4 rounded-lg font-bold text-lg hover:opacity-90 transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
           >
-            Book Appointment
+            {isSubmitting ? 'Booking…' : 'Book Appointment'}
           </button>
         </form>
 

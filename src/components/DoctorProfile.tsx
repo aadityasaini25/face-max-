@@ -8,9 +8,10 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
   return (
     <section className="relative bg-white py-20 md:py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 tracking-tight">Meet Your <span className="text-[#485b51]">Surgeon</span></h2>
-          <div className="w-24 h-1.5 bg-[#d4af37] mx-auto rounded-full mb-8"></div>
+        <div className="text-center md:text-left mb-12">
+          <p className="text-[#485b51] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Our Surgeon</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-4">Meet Your Surgeon</h2>
+          <div className="w-16 h-0.5 bg-[#d4af37] rounded-full mx-auto md:mx-0" />
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
@@ -35,19 +36,23 @@ export default function DoctorProfile({ onBookAppointment }: DoctorProfileProps)
               Oral & Maxillofacial Surgeon | Implantologist
             </p>
 
-            <div className="space-y-6 text-gray-600 text-lg md:text-xl leading-relaxed font-light">
+            <div className="space-y-5 text-gray-600 text-base md:text-lg leading-relaxed">
               <p>
-                With over <strong className="text-gray-900 font-medium">7 years of specialized surgical experience</strong>, Dr. Salunkhe has built a reputation for clinical excellence and compassionate patient care. He focuses on delivering precise, natural-looking results in complex implant and reconstructive cases.
+                Dr. Shubham Sunil Salunkhe brings over seven years of focused experience in oral & maxillofacial surgery and implantology. His practice covers the full spectrum: dental implants, wisdom tooth surgery, jaw correction, and facial trauma — all supported by a 100% digital workflow for precise planning and predictable outcomes.
               </p>
               <p>
-                Under his leadership, <strong>Face Max Dental Clinic</strong> utilizes a 100% digital workflow. This advanced technology ensures that every procedure—from a simple extraction to full mouth rehabilitation—is safe, predictable, and minimally invasive.
+                At Face Max Dental Clinic, surgery and implant care are under one roof. One surgeon who follows your case from consultation through recovery — no handoffs, no fragmented care.
               </p>
+              <blockquote className="border-l-4 border-[#485b51] pl-6 py-2 my-6 bg-gray-50/80 rounded-r-lg text-gray-700 italic text-[15px] md:text-base">
+                “We believe you should leave every visit informed and reassured. Taking the time to explain and get it right is part of the job.”
+                <span className="block mt-2 not-italic text-sm text-gray-500">— Dr. Shubham Sunil Salunkhe</span>
+              </blockquote>
               <p>
-                Dr. Salunkhe understands that visiting a surgeon can be daunting. His approach is rooted in empathy, ensuring you feel completely informed, supported, and comfortable throughout your entire treatment journey.
+                We understand that surgery and implants can feel daunting. Our aim is to make the process clear, comfortable, and focused on your long-term health and satisfaction.
               </p>
             </div>
 
-            <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <button
                 onClick={onBookAppointment}
                 className="bg-[#485b51] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#3a4a42] transition-colors shadow-lg hover:shadow-xl hover:-translate-y-1"

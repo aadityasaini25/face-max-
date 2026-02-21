@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://smilecitygurgaon.com/'), // Updated URL
+  metadataBase: new URL('https://face-max-clinic.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Face Max Dental Clinic | Expert Implant & Surgical Care",
     description: "Dr. Shubham Sunil Salunkhe - 7+ Years Experience. Bhekrai Nagar Road, Pune.",
-    url: 'https://smilecitygurgaon.com/', // Keeping URL as placeholder or if user wants to keep domain
+    url: 'https://face-max-clinic.vercel.app/',
     siteName: "Face Max Dental Clinic",
     images: [
       {
@@ -68,7 +68,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#2563eb" />
+        <meta name="theme-color" content="#485b51" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
       </head>

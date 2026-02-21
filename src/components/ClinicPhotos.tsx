@@ -16,10 +16,10 @@ export default function ClinicPhotos({ onBookAppointment }: ClinicPhotosProps) {
   return (
     <section className="py-20 md:py-32 px-4 md:px-8 bg-lavender" id="gallery">
       <div className="max-w-[95%] 2xl:max-w-screen-2xl mx-auto w-full">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">Our Modern Facility</h2>
-          <div className="w-24 h-1.5 bg-[#485b51] mx-auto rounded-full"></div>
-        </div>
+        <p className="text-[#485b51] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Our Facility</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-4">Our Clinic</h2>
+        <div className="w-16 h-0.5 bg-[#d4af37] rounded-full mb-4" />
+        <p className="text-gray-600 max-w-xl mb-12">Shiv Shakti Heights, 1st Floor — Bhekrai Nagar Road, Pune.</p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16">
           {clinicImages.map((img, i) => (

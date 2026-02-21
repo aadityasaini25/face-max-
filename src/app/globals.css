@@ -453,11 +453,11 @@
   }
 }
 
-/* Section visibility animations */
+/* Section visibility – subtle fade, no big slide */
 section {
   opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
   @apply py-20 md:py-32;
 }
 

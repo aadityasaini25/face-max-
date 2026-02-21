@@ -1,48 +1,46 @@
-export default function WhyChooseUs() {
-    return (
-        <section className="py-20 md:py-32 bg-gray-50 px-4 md:px-8">
-            <div className="max-w-6xl mx-auto">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
-                        Why Choose <span className="text-[#485b51]">Face Max Clinic?</span>
-                    </h2>
-                    <div className="w-20 h-1 bg-[#d4af37] mx-auto rounded-full"></div>
-                </div>
+const points = [
+  {
+    title: "Specialist Expertise",
+    desc: "Your care is led by an MDS-qualified Oral & Maxillofacial Surgeon and Implantologist. Surgery and implants in one practice — no referral chain.",
+  },
+  {
+    title: "100% Digital Workflow",
+    desc: "From scan to plan to placement, every step is digital. Predictable outcomes, clear communication, and precision you can see before treatment.",
+  },
+  {
+    title: "Infection Control & Hygiene",
+    desc: "Sterilization and disinfection protocols that meet international standards. Your safety is non-negotiable.",
+  },
+  {
+    title: "Personalized Patient Care",
+    desc: "We take time to explain your options, answer questions, and support you through treatment. You’re a person, not a case number.",
+  },
+];
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {[
-                        {
-                            title: "Specialist Expertise",
-                            desc: "Led by an experienced Oral & Maxillofacial Surgeon and Implantologist for complex surgical precision.",
-                            icon: "👨‍⚕️"
-                        },
-                        {
-                            title: "100% Digital Workflow",
-                            desc: "Predictable, precise outcomes using state-of-the-art digital scanning and 3D planning.",
-                            icon: "🖥️"
-                        },
-                        {
-                            title: "Uncompromising Hygiene",
-                            desc: "Strict adherence to international sterilization protocols to ensure your absolute safety.",
-                            icon: "🧼"
-                        },
-                        {
-                            title: "Patient-Centered Care",
-                            desc: "A personalized, reassuring approach to minimize anxiety and maximize comfort during procedures.",
-                            icon: "🤝"
-                        }
-                    ].map((usp, index) => (
-                        <div
-                            key={index}
-                            className="bg-white p-8 rounded-2xl text-center shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100"
-                        >
-                            <div className="text-4xl mb-4">{usp.icon}</div>
-                            <h3 className="font-bold text-xl text-gray-900 mb-3">{usp.title}</h3>
-                            <p className="text-gray-600 leading-relaxed font-light text-sm">{usp.desc}</p>
-                        </div>
-                    ))}
-                </div>
+export default function WhyChooseUs() {
+  return (
+    <section className="py-20 md:py-28 px-4 md:px-8 bg-gray-50/80">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center md:text-left mb-12">
+          <p className="text-[#485b51] font-semibold text-sm uppercase tracking-[0.2em] mb-2">Why Face Max</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-4">
+            Why Choose Face Max Clinic
+          </h2>
+          <div className="w-16 h-0.5 bg-[#d4af37] rounded-full mx-auto md:mx-0" />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          {points.map((item, i) => (
+            <div
+              key={i}
+              className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-gray-200/80 transition-all duration-300"
+            >
+              <h3 className="font-bold text-lg text-gray-900 mb-3">{item.title}</h3>
+              <p className="text-gray-600 text-[15px] leading-relaxed">{item.desc}</p>
             </div>
-        </section>
-    );
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
