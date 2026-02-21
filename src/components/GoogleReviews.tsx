@@ -3,64 +3,64 @@ import Image from "next/image";
 export default function GoogleReviews() {
   const reviews = [
     {
-      name: "Amol kenche",
+      name: "Amol Kenche",
       initials: "AK",
-      date: "6 months ago",
-      review: "Had a great experience at Face max Dental & Face Clinic. Dr. Rasika Salunkhe is skilled and gentle. The treatment was painless and effective. Clean and modern clinic with a supportive staff. Highly recommended!"
+      date: "2 months ago",
+      review: "Dr. Shubham is an incredibly skilled surgeon. I was very nervous about getting dental implants, but he explained everything clearly and the procedure was completely painless. The clinic itself is spotless and highly advanced."
     },
     {
-      name: "Shrirup Jogdand",
+      name: "Shruti Jagtap",
       initials: "SJ",
-      date: "1 months ago",
-      review: "Took my kids to Face Max Dental for their check-ups, and Dr. Rasika was amazing with them! She made the experience fun and comfortable, and the kids left with smiles on their faces. A family-friendly clinic indeed!"
+      date: "4 months ago",
+      review: "I had a complex wisdom tooth extraction done here. Dr. Salunkhe and his team made the process so smooth and comfortable. Recovery was much faster than I expected. Highly recommend Face Max for any surgical procedures."
     },
     {
-      name: "Dr suyog shendage",
+      name: "Dr. Suyog Shendage",
       initials: "SS",
-      date: "8 months ago",
-      review: "I had a dental emergency last weekend and Dr. Shubham at Face Max Dental and Face Clinic was a lifesaver. He was calm, professional, and very skilled. The pain relief was immediate, and the follow-up care instructions were clear. Truly grateful"
+      date: "6 months ago",
+      review: "I had a dental emergency and Dr. Shubham was a lifesaver. He was calm, professional, and very precise. The pain relief was immediate, and the follow-up care was excellent. Truly grateful to the whole team."
     },
     {
-      name: "Eppar Amit",
-      initials: "EA",
-      date: "6 months ago",
-      review: "Face Max Dental provides efficient and professional service. Dr. Shubham handled my root canal procedure seamlessly, and the results were excellent. The clinic is clean, and the staff is courteous. Highly recommended!"
+      name: "Amit E.",
+      initials: "AE",
+      date: "8 months ago",
+      review: "Top-notch facility. The digital workflow they use for implants is fascinating, and the results are fantastic. Dr. Salunkhe is thorough, professional, and clearly a master at what he does."
     }
   ];
 
   return (
-    <section className="py-20 md:py-32 px-4 md:px-8 lg:px-12 bg-lavender">
+    <section className="py-20 md:py-32 px-4 md:px-8 lg:px-12 bg-gray-50 border-t border-gray-100">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <Image
             src="/images/google.png"
             alt="Google Logo"
-            width={160}
-            height={60}
-            className="mx-auto mb-6 object-contain"
+            width={120}
+            height={40}
+            className="mx-auto mb-6 object-contain opacity-90"
           />
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight">What Our Patients Say</h2>
-          <div className="w-24 h-1 bg-[#485b51] mx-auto rounded-full mt-6 opacity-60"></div>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900">Patient Experiences</h2>
+          <div className="w-20 h-1 bg-[#d4af37] mx-auto rounded-full mt-6"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
           {reviews.map((review, index) => (
-            <div key={index} className="card">
+            <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 flex flex-col h-full">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-inner" style={{ backgroundColor: '#485b51' }}>
+                <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-lg bg-[#485b51]">
                   {review.initials}
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-gray-900">{review.name}</h3>
-                  <p className="text-sm text-gray-500">{review.date}</p>
+                  <h3 className="font-bold text-lg text-gray-900 leading-tight">{review.name}</h3>
+                  <p className="text-sm text-gray-500 mt-1">{review.date}</p>
                 </div>
               </div>
-              <div className="flex text-yellow-400 mb-4 text-lg">
+              <div className="flex text-[#d4af37] mb-4 text-sm">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i}>⭐</span>
+                  <span key={i}>★</span>
                 ))}
               </div>
-              <p className="text-gray-700 leading-relaxed font-light">{review.review}</p>
+              <p className="text-gray-600 leading-relaxed font-light flex-grow">{review.review}</p>
             </div>
           ))}
         </div>

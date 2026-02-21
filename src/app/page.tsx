@@ -6,18 +6,14 @@ import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ServiceHighlights from "@/components/ServiceHighlights";
-import BeforeAfterGallery from "@/components/BeforeAfterGallery";
 import CTABox from "@/components/CTABox";
 import GoogleReviews from "@/components/GoogleReviews";
-import VideoTestimonial from "@/components/VideoTestimonial";
 import DoctorProfile from "@/components/DoctorProfile";
-import CelebrityGallery from "@/components/CelebrityGallery";
 import ClinicPhotos from "@/components/ClinicPhotos";
-import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import PopupForm from "@/components/PopupForm";
 import StickyCTA from "@/components/StickyCTA";
-import AboutSection from "@/components/AboutSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   const [showStickyCta, setShowStickyCta] = useState(false);
@@ -104,14 +100,12 @@ export default function Home() {
       <div className="relative z-10">
         <Header onBookAppointment={openPopup} />
         <HeroSection onBookAppointment={openPopup} />
-        <GoogleReviews />
-        <AboutSection />
-        <ServiceHighlights />
-        <BeforeAfterGallery onBookAppointment={openPopup} />
-        <CTABox onBookAppointment={openPopup} />
+        <WhyChooseUs />
         <DoctorProfile onBookAppointment={openPopup} />
+        <ServiceHighlights />
         <ClinicPhotos onBookAppointment={openPopup} />
-        <FAQSection />
+        <GoogleReviews />
+        <CTABox onBookAppointment={openPopup} />
         <Footer />
       </div>
 
