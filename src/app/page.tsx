@@ -14,6 +14,7 @@ import Footer from "@/components/Footer";
 import PopupForm from "@/components/PopupForm";
 import StickyCTA from "@/components/StickyCTA";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import FAQSection from "@/components/FAQSection";
 
 export default function Home() {
   const [showStickyCta, setShowStickyCta] = useState(false);
@@ -112,6 +113,7 @@ export default function Home() {
         <WhyChooseUs />
         <DoctorProfile onBookAppointment={openPopup} />
         <ServiceHighlights />
+        <FAQSection />
         <ClinicPhotos onBookAppointment={openPopup} />
         <GoogleReviews />
         <CTABox onBookAppointment={openPopup} />

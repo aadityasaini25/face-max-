@@ -1,19 +1,19 @@
 const points = [
   {
     title: "Specialist Expertise",
-    desc: "Your care is led by an MDS-qualified Oral & Maxillofacial Surgeon and Implantologist. Surgery and implants in one practice — no referral chain.",
+    desc: "Your care is led by a specialist team: Dr. Shubham Sunil Salunkhe (BDS, MDS – Oral & Maxillofacial Surgery) and Dr. Rasika Salunkhe (BDS, MDS – Prosthodontics). Surgical and prosthetic planning under one roof.",
   },
   {
     title: "100% Digital Workflow",
-    desc: "From scan to plan to placement, every step is digital. Predictable outcomes, clear communication, and precision you can see before treatment.",
+    desc: "From scan to prosthesis, every step is digitally planned. Prosthetic-driven implant placement for predictable, long-term aesthetic and functional outcomes.",
   },
   {
     title: "Infection Control & Hygiene",
-    desc: "Sterilization and disinfection protocols that meet international standards. Your safety is non-negotiable.",
+    desc: "Sterilization and disinfection protocols that meet international standards. Your safety and surgical environment are treated as non-negotiable.",
   },
   {
     title: "Personalized Patient Care",
-    desc: "We take time to explain your options, answer questions, and support you through treatment. You’re a person, not a case number.",
+    desc: "Evidence-based, ethical treatment planning with clear explanations, realistic expectations and long-term follow-up care — especially for full mouth and advanced implant cases.",
   },
 ];
 

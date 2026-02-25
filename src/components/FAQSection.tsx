@@ -7,28 +7,29 @@ export default function FAQSection() {
 
   const faqs = [
     {
-      question: "What is Invisalign and how does it work?",
-      answer: "Invisalign uses a series of clear, removable aligners to gradually straighten your teeth. Each set is worn for about 1-2 weeks and works by applying precise, controlled pressure to move teeth into their ideal positions without the need for metal wires or brackets."
+      question: "Are dental implants painful?",
+      answer:
+        "Implant procedures are performed under local anaesthesia. Most patients report only mild discomfort afterwards, which is usually well controlled with routine medication.",
     },
     {
-      question: "How long does orthodontic treatment usually take?",
-      answer: "Treatment duration varies based on complexity. During your consultation with Dr. Shubham Sunil Salunkhe, we'll provide a customized timeline for your specific treatment plan."
+      question: "How long do dental implants last?",
+      answer:
+        "With proper oral hygiene, regular check-ups and professional maintenance, dental implants can last many years and often decades.",
     },
     {
-      question: "Am I too old for braces or Invisalign?",
-      answer: "Absolutely not! Orthodontic treatment is effective at any age as long as your gums and bone structure are healthy. Many of our patients are adults seeking a more confident, professional smile with discreet options like Invisalign."
+      question: "Am I a candidate for full mouth implants?",
+      answer:
+        "Most patients with multiple missing or failing teeth are candidates. A detailed clinical and radiographic evaluation is required to confirm bone quality and plan the right approach.",
     },
     {
-      question: "How often do I need to visit the clinic during treatment?",
-      answer: "With our specialist-driven approach, we typically see Invisalign patients every 6-8 weeks and braces patients every 4-6 weeks to monitor progress and provide your next sets of aligners or make adjustments."
+      question: "How long does full mouth implant treatment take?",
+      answer:
+        "Timelines vary based on bone condition and case complexity. In suitable cases, immediate protocols are possible; in others, a staged approach is safer and more predictable.",
     },
     {
-      question: "Do clear aligners really work as well as metal braces?",
-      answer: "Yes, for the vast majority of cases. Invisalign technology has advanced significantly and can treat crowding, spacing, overbites, and underbites with the same precision as traditional braces, while offering better comfort and aesthetics."
-    },
-    {
-      question: "How do I maintain my smile after treatment?",
-      answer: "After your active treatment is finished, you'll wear a retainer to keep your teeth in their new positions. We provide high-quality custom retainers and long-term follow-up to ensure your beautiful results last a lifetime."
+      question: "Is the implant procedure safe?",
+      answer:
+        "When performed by trained specialists following proper protocols, dental implants are a highly predictable and safe treatment option.",
     }
   ];
 

@@ -3,26 +3,50 @@ export default function ServiceHighlights() {
     {
       title: "Dental Implants",
       image: "/images/implant/single.png",
-      description: "Titanium and zirconia implants with digital planning so placement is precise and results look natural.",
-      benefits: ["Digital planning", "Natural look and feel", "Bone preservation", "Long-term durability"],
+      description:
+        "Single, multiple and full-arch implants planned digitally for precise placement and natural-looking results.",
+      benefits: [
+        "Single & multiple tooth implants",
+        "All-on-4 / All-on-6 full-arch options",
+        "Immediate implants (where indicated)",
+        "Implant-supported crowns and bridges",
+      ],
     },
     {
-      title: "Wisdom Tooth Surgery",
+      title: "Full Mouth Rehabilitation",
       image: "/images/implant/Multiple.png",
-      description: "Impacted or painful wisdom teeth removed with care. Sedation available; we focus on comfort and quicker recovery.",
-      benefits: ["Minimally invasive", "Sedation when needed", "Clear aftercare", "Fewer future issues"],
+      description:
+        "Prosthetic-driven, occlusion-focused rehabilitation for worn, missing or failing teeth, often supported by implants.",
+      benefits: [
+        "Comprehensive occlusal analysis",
+        "Smile correction & functional redesign",
+        "Implant-supported full mouth reconstruction",
+        "Digitally designed prosthetic outcomes",
+      ],
     },
     {
-      title: "Jaw & Orthognathic Surgery",
+      title: "Supporting Surgical Procedures",
       image: "/images/implant/supported.png",
-      description: "Corrective jaw surgery for bite problems, joint pain, and sleep apnea. Function and appearance both considered.",
-      benefits: ["Better bite", "Less joint pain", "Improved breathing", "Balanced facial profile"],
+      description:
+        "Procedures that prepare and support implant and restorative care, delivered with a focus on comfort and safety.",
+      benefits: [
+        "Surgical extractions & minor oral surgery",
+        "Bone grafting and site development",
+        "Soft tissue management",
+        "Careful post-operative follow-up",
+      ],
     },
     {
-      title: "Facial Trauma Reconstruction",
+      title: "Cosmetic & Restorative Dentistry",
       image: "/images/implant/all_in.png",
-      description: "Repair of facial and jaw injuries — from emergency care to follow-up so function and appearance are restored.",
-      benefits: ["Emergency care", "Bone and soft tissue repair", "Scar reduction", "Ongoing follow-up"],
+      description:
+        "Restorative and aesthetic dentistry to complete your treatment plan and harmonise your smile with your new implants.",
+      benefits: [
+        "Ceramic crowns and bridges",
+        "Smile enhancement and contouring",
+        "Tooth-coloured restorations",
+        "Long-term maintenance planning",
+      ],
     },
   ];
 

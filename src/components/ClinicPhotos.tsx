@@ -6,10 +6,10 @@ interface ClinicPhotosProps {
 
 export default function ClinicPhotos({ onBookAppointment }: ClinicPhotosProps) {
   const clinicImages = [
-    { src: '/images/clinic/clinic1.jpeg', alt: 'Modern Clinic Interior' },
-    { src: '/images/clinic/clinic2.jpeg', alt: 'Comfortable Reception Area' },
-    { src: '/images/clinic/clinic3.jpeg', alt: 'Advanced Dental Lab' },
-    // { src: '/images/clinic/clinic4.jpeg', alt: 'State-of-the-art Equipment' }, // User only provided 3, keep 3 or duplicate one if 4 slots needed?
+    { src: '/images/clinic/clinic1.jpg', alt: 'Modern Clinic Interior' },
+    { src: '/images/clinic/clinic2.jpg', alt: 'Comfortable Reception Area' },
+    { src: '/images/clinic/clinic3.jpg', alt: 'Advanced Dental Lab' },
+    // { src: '/images/clinic/clinic4.jpg', alt: 'State-of-the-art Equipment' }, // User only provided 3, keep 3 or duplicate one if 4 slots needed?
     // kept 3 as user provided 3. The grid handles 3 items (grid-cols-1 md:grid-cols-2).
   ];
 

@@ -14,7 +14,9 @@ export default function HeroSection({ onBookAppointment }: HeroSectionProps) {
           <span className="text-[#485b51]">Surgical Care</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed font-light">
-          Precision implantology and oral surgery in Pune. Led by Dr. Shubham Sunil Salunkhe — 7+ years experience, 100% digital workflow.
+          Specialist-led implant and full mouth rehabilitation centre in Pune, led by{" "}
+          <span className="font-semibold">Dr. Shubham Sunil Salunkhe (BDS, MDS – Oral &amp; Maxillofacial Surgery)</span>{" "}
+          and <span className="font-semibold">Dr. Rasika Salunkhe (BDS, MDS – Prosthodontics)</span>.
         </p>
       </div>
 

@@ -65,13 +65,13 @@ export default function Footer() {
         {/* Payment Methods and Maps Embed */}
         <div className="grid md:grid-cols-2 gap-4 items-start">
           <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
-            <h3 className="font-bold text-gray-900 mb-2 text-sm border-b border-gray-100 pb-1">Payment Methods Accepted</h3>
+            <h3 className="font-bold text-gray-900 mb-2 text-sm border-b border-gray-100 pb-1">Payment &amp; Billing</h3>
             <ul className="grid grid-cols-2 gap-2 mt-2">
               {[
                 { name: "Credit & Debit Card", icon: "💳" },
+                { name: "UPI", icon: "📱" },
                 { name: "Cash", icon: "💵" },
-                { name: "Cheque", icon: "📝" },
-                { name: "No Cost EMI", icon: "🏦" }
+                { name: "EMI for advanced cases", icon: "🏦" }
               ].map((method, idx) => (
                 <li key={idx} className="flex items-center gap-1.5 text-gray-600 text-[11px] sm:text-xs">
                   <span>{method.icon}</span>
@@ -79,7 +79,9 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <p className="mt-2 text-[10px] sm:text-[11px] text-[#485b51] font-medium leading-tight">No Cost EMI facility available for all major treatments.</p>
+            <p className="mt-2 text-[10px] sm:text-[11px] text-[#485b51] font-medium leading-tight">
+              Bills are provided for all treatments — please check with your corporate or insurance provider for reimbursement eligibility.
+            </p>
           </div>
 
           <div className="bg-gray-100 rounded-xl overflow-hidden h-[160px] shadow-inner border border-gray-200">
