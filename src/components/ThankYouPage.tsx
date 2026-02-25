@@ -19,15 +19,15 @@ export default function ThankYouPage() {
           <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
             <div className="w-48 h-48 relative rounded-full overflow-hidden border-4 border-gray-200">
               <Image
-                src="/images/smile.jpg"
-                alt="Dr. Shubham Sunil Salunkhe"
+                src="/images/doctor/Dr. Shubham Sunil Salunkhe.png"
+                alt="Dr. Shubham Salunkhe"
                 fill
                 className="object-cover object-top"
               />
             </div>
             <div className="text-center md:text-left">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
-                Dr. Shubham Sunil Salunkhe
+                Dr. Shubham Salunkhe
               </h2>
               <p className="text-[#01659e] font-medium mb-4">
                 Oral & Maxillofacial Surgeon | Implantologist
